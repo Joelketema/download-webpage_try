@@ -1,0 +1,144 @@
+:root{
+
+    --primary-color: #047aed;
+  }
+.container
+{
+    border: 1px solid black;
+    background: linear-gradient(12deg, var(--primary-color), #03407c);
+    border-radius: 10px;
+    max-width: 2000px;
+    max-height: 1000px;
+    box-shadow: 5px 7px 7px grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+   
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    border: 0;
+}
+a:active
+{
+    color:rgb(0, 0, 0);
+}
+
+a:hover
+{
+    text-shadow: 1px 2px 2px black;
+}
+
+#btn
+{
+    margin-top: 200px;
+    margin-left: 600px;
+    margin-bottom: 50px;
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1px #fff solid;
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--primary-color);
+    transition: all ease 200ms;
+    -webkit-transition: all ease 200ms;
+    color:white;
+    background-color: transparent;
+}
+
+#btn:hover
+{
+   
+    box-shadow: 1px 7px 4px black;
+    transform: scaleX(1);
+    transform: scaleY(1);
+    transform: translateZ(0);
+    -webkit-transform: scaleX(1); 
+    -webkit-transform:  scaleY(1);
+    -webkit-transform:  translateZ(1);
+    background: linear-gradient(14deg, rgb(20, 83, 179), rgb(20, 83, 179));
+
+}
+
+#btn::before, #btn::after{
+
+    transform: translateZ(1);
+    -webkit-transform :  translateZ(1);
+}
+
+h3{
+
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid white;
+    width: 120px;
+    margin-left:100px;
+    font-weight: bolder;
+    background-color: transparent;
+    color:white;
+    text-shadow: 1px 2px 2px black;
+    box-shadow: 1px 2px 2px wheat;
+    
+    
+}
+
+p{
+
+    
+    width:390px;
+    margin-left: 35px;
+    padding: 20px;
+    color: white;
+    transition: all ease 500ms;
+}
+
+#idea{
+    box-shadow: 1px 2px 3px black;
+    color:white;
+}
+.nav
+{
+    margin-top: -180px;
+    margin-right: 20px;
+    position:sticky;
+
+    
+}
+li
+{
+    display:  flex;
+    justify-content: flex-end;
+    
+}
+
+#home:hover,#about:hover
+{
+  border-bottom: 1.5px whitesmoke solid;
+  
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    color: wheat;
+    text-shadow: 1px 2px 2px black;
+  }
+
+
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
